@@ -31,7 +31,6 @@ import java.util.prefs.Preferences;
 import java.util.stream.Collectors;
 
 public class MainController {
-git
 
     @FXML private VBox contentArea;
     @FXML private Button userMenuBtn;
