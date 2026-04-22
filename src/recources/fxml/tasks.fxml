@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="tasksRoot" spacing="15" alignment="TOP_CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.app.controller.TasksController"
+      styleClass="root"
+      style="-fx-padding: 20;">
+
+    <Label fx:id="titleLabel" text="МОИ ЗАДАЧИ" styleClass="title" style="-fx-font-weight: bold;"/>
+
+    <TextField fx:id="searchField" promptText="🔍 Поиск задач..."
+               style="-fx-background-color: #181818; -fx-text-fill: white; -fx-prompt-text-fill: #888; -fx-pref-height: 35; -fx-background-radius: 10;"
+               maxWidth="350" prefWidth="350"/>
+
+    <Button fx:id="addTaskBtn" text="+ НОВАЯ ЗАДАЧА" onAction="#handleAddTask"
+            style="-fx-font-weight: bold; -fx-pref-height: 35; -fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-background-radius: 10;"/>
+
+    <HBox spacing="15" alignment="CENTER" style="-fx-padding: 10;">
+
+        <VBox spacing="10" style="-fx-background-color: #1a1a1a; -fx-background-radius: 10; -fx-padding: 10;" prefWidth="280">
+            <Label fx:id="draftCountLabel" text="📝 НУЖНО СДЕЛАТЬ (0)" style="-fx-text-fill: #ffa500; -fx-font-weight: bold; -fx-font-size: 13;"/>
+            <ListView fx:id="draftListView" style="-fx-background-color: transparent; -fx-border-color: transparent;" prefHeight="450"/>
+        </VBox>
+
+        <VBox spacing="10" style="-fx-background-color: #1a1a1a; -fx-background-radius: 10; -fx-padding: 10;" prefWidth="280">
+            <Label fx:id="progressCountLabel" text="🔄 В ПРОЦЕССЕ (0)" style="-fx-text-fill: #3498db; -fx-font-weight: bold; -fx-font-size: 13;"/>
+            <ListView fx:id="inProgressListView" style="-fx-background-color: transparent; -fx-border-color: transparent;" prefHeight="450"/>
+        </VBox>
+
+        <VBox spacing="10" style="-fx-background-color: #1a1a1a; -fx-background-radius: 10; -fx-padding: 10;" prefWidth="280">
+            <Label fx:id="doneCountLabel" text="✅ ГОТОВО (0)" style="-fx-text-fill: #27ae60; -fx-font-weight: bold; -fx-font-size: 13;"/>
+            <ListView fx:id="doneListView" style="-fx-background-color: transparent; -fx-border-color: transparent;" prefHeight="450"/>
+        </VBox>
+
+    </HBox>
+
+</VBox>

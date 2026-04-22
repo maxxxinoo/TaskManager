@@ -1,0 +1,98 @@
+.error-label {
+    -fx-text-fill: red;
+    -fx-font-size: 11;
+}
+
+.message-label {
+    -fx-text-fill: red;
+    -fx-font-size: 12;
+}
+
+.cancel-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888;
+    -fx-font-size: 12;
+}
+
+.user-popup {
+    -fx-background-color: #2a2a2a;
+    -fx-background-radius: 10;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+.popup-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8 20;
+    -fx-background-radius: 5;
+}
+
+.popup-item-logout {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ff6b6b;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8 20;
+    -fx-background-radius: 5;
+}
+
+.popup-separator {
+    -fx-background-color: #444;
+}
+
+.profile-box {
+    -fx-padding: 40;
+}
+
+.password-box {
+    -fx-padding: 40;
+}
+
+.home-box {
+    -fx-padding: 40;
+}
+
+.chart-pie-label {
+    -fx-fill: #333;
+    -fx-font-size: 12px;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #333;
+}
+
+.chart-title {
+    -fx-text-fill: #333;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 13;
+    -fx-padding: 8 15;
+    -fx-background-radius: 5;
+}
+
+.button {
+    -fx-text-fill: #333;
+}
+
+.nav-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+.nav-button {
+    -fx-text-fill: #333;
+}
+
+.axis-label {
+    -fx-text-fill: #666;
+}
+
+.axis-tick-label {
+    -fx-text-fill: #555;
+}
+
+.stats-container {
+    -fx-padding: 0 0 20 0;
+}

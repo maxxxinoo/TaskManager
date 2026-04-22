@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: com.example.app.Main
+Class-Path: sqlite-jdbc-3.44.1.0.jar slf4j-simple-2.0.9.jar slf4j-simple
+ -1.7.36.jar slf4j-api-1.7.36.jar javafx-swt.jar javafx.web.jar javafx.b
+ ase.jar javafx.fxml.jar javafx.media.jar javafx.swing.jar jdk.jsobject.
+ jar javafx.controls.jar javafx.graphics.jar jfx.incubator.input.jar jfx
+ .incubator.richtext.jar
+

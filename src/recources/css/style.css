@@ -1,0 +1,187 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #0D0D0D, #121212);
+    -fx-padding: 30;
+}
+
+.title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 200;
+}
+
+.button {
+    -fx-background-color: #1F1F1F;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+/* Стиль для выпадающего меню */
+#userMenuPopup {
+    -fx-background-color: #2a2a2a;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 15, 0, 0, 5);
+}
+
+#userMenuPopup .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 13;
+    -fx-padding: 8 20;
+    -fx-alignment: CENTER_LEFT;
+}
+
+#userMenuPopup .button:hover {
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 5;
+}
+
+#userMenuPopup .button:last-child {
+    -fx-text-fill: #ff6b6b;
+}
+
+.popup {
+    -fx-background-color: transparent;
+}
+/* Кастомный диалог */
+.custom-dialog {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+}
+
+.custom-dialog .content {
+    -fx-background-color: transparent;
+}
+
+.dialog-pane {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 15;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: transparent;
+}
+
+.check-box {
+    -fx-text-fill: #888;
+    -fx-font-size: 12;
+}
+
+.check-box .box {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #555;
+    -fx-border-radius: 3;
+}
+
+/* Стили для TextArea */
+.text-area {
+    -fx-background-color: #181818;
+    -fx-text-fill: white;
+}
+
+.text-area .content {
+    -fx-background-color: #181818;
+    -fx-text-fill: white;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: #181818;
+}
+
+/* Стили для TextField */
+.text-field {
+    -fx-background-color: #181818;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #888;
+}
+
+/* Стиль для ListView */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: transparent;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: transparent;
+}
+
+/* Убираем белую рамку */
+.list-view .scroll-bar:vertical {
+    -fx-background-color: #1a1a1a;
+}
+
+/* Убираем вертикальный ползунок в ListView */
+.list-view .scroll-bar:vertical {
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+    -fx-opacity: 0;
+}
+
+/* Убираем горизонтальный ползунок в ListView */
+.list-view .scroll-bar:horizontal {
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    -fx-opacity: 0;
+}
+
+
+
+/* Убираем пустую область в углу */
+.list-view .corner {
+    -fx-background-color: transparent;
+}
+
+.list-view .corner {
+    -fx-background-color: transparent;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #1F1F1F;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+/* Убираем белые уголки у диалога */
+.dialog-pane {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 15;
+    -fx-border-color: #1a1a1a;
+    -fx-border-radius: 15;
+}
+
+.dialog-pane .button-bar {
+    -fx-alignment: center;
+}
+
+.dialog-pane .container {
+    -fx-background-color: #1a1a1a;
+}
+
+/* Убираем белую обводку */
+.dialog-pane:header .header-panel {
+    -fx-background-color: #1a1a1a;
+}
+
+#userMenuPopup .separator {
+    -fx-background-color: #444;
+    -fx-padding: 0;
+}

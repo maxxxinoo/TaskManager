@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.app.controller.MainController"
+            styleClass="root"
+            stylesheets="@/css/style.css">
+
+    <top>
+        <HBox spacing="20" alignment="CENTER" styleClass="top-panel" style="-fx-background-color: #1a1a1a; -fx-padding: 10 20;">
+
+
+            <Region prefWidth="250"/>
+
+            <Button fx:id="homeBtn" text="Главная" onAction="#handleHome"
+                    style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-font-size: 13; -fx-padding: 8 15; -fx-background-radius: 5;"/>
+
+            <Button fx:id="tasksBtn" text="Мои задачи" onAction="#handleTasks"
+                    style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-font-size: 13; -fx-padding: 8 15; -fx-background-radius: 5;"/>
+
+            <Button fx:id="statsBtn" text="Статистика" onAction="#handleStatistics"
+                    style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-font-size: 13; -fx-padding: 8 15; -fx-background-radius: 5;"/>
+
+            <Button fx:id="aboutBtn" text="О программе" onAction="#handleAbout"
+                    style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-font-size: 13; -fx-padding: 8 15; -fx-background-radius: 5;"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <Button fx:id="themeToggleBtn" text="🌙" onAction="#toggleTheme"
+                    style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-font-size: 14; -fx-background-radius: 20; -fx-pref-width: 35; -fx-pref-height: 35;"/>
+
+            <Button fx:id="userMenuBtn" text=" ☰ " onAction="#showUserMenu"
+                    style="-fx-background-color: #2a2a2a; -fx-text-fill: white; -fx-font-size: 18; -fx-background-radius: 20; -fx-pref-width: 35; -fx-pref-height: 35;"/>
+
+        </HBox>
+    </top>
+
+    <center>
+        <VBox fx:id="contentArea" spacing="20" alignment="TOP_CENTER" style="-fx-padding: 40; -fx-background-color: transparent; -fx-border-color: transparent;"/>
+    </center>
+
+</BorderPane>
