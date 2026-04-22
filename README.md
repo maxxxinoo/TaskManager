@@ -19,7 +19,7 @@
 
 ## Как запустить
 1. Установи PostgreSQL и создай базу данных `taskmanager_db`
-2. Выполни SQL-скрипт из файла `schema.sql` (если есть)
+2. Выполни SQL-скрипт из файла `schema.sql` 
 3. В файле `application.properties` укажи свои логин и пароль от PostgreSQL
 4. Запусти `Main.java`
 
